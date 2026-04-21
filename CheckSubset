@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+T = int(input())
+
+for i in range(T):
+    N_A = int(input())
+    VAL_A = set(map(int, input().split()))
+    N_B = int(input())
+    VAL_B = set(map(int, input().split()))
+    
+    print(VAL_A.issubset(VAL_B))
+    
