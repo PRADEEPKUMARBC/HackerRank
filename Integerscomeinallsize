@@ -1,0 +1,9 @@
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+
+
+pow_sum = pow(a,b) + pow(c,d)
+print(pow_sum)
