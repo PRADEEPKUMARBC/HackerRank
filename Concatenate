@@ -1,0 +1,10 @@
+import numpy
+
+N,M,P = map(int, input().split())
+
+sum = (N+M)
+final_arr = []
+for _ in range(sum):
+    arr = list(map(int, input().split()))
+    final_arr.append(arr)
+print(numpy.array(final_arr))
