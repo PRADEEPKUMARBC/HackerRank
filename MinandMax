@@ -1,0 +1,11 @@
+import numpy
+
+N,M = map(int, input().split())
+
+list1 = []
+
+for i in range(N):
+    n1 = list(map(int, input().split()))
+    list1.append(n1)
+arr = numpy.array(list1)
+print(numpy.min(numpy.max(arr, axis=1), axis=0))
