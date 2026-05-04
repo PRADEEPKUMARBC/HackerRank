@@ -1,0 +1,15 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import numpy
+
+
+N,M = map(int, input().split())
+
+
+list1 = []
+for i in range(N):
+    l1 = list(map(int, input().split()))
+    list1.append(l1)
+arr = numpy.array(list1)
+print(numpy.mean(arr, axis=1))
+print(numpy.var(arr, axis=0))
+print(round(numpy.std(arr),11))
