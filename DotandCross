@@ -1,0 +1,17 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import numpy
+N = int(input())
+
+list1 = []
+list2 = []
+
+for i in range(N):
+    l1 = list(map(int, input().split()))
+    list1.append(l1)
+for i in range(N):
+    l2 = list(map(int, input().split()))
+    list2.append(l2)
+arr1 = numpy.array(list1)
+arr2= numpy.array(list2)
+print(numpy.dot(arr1, arr2))
+    
