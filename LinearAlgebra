@@ -1,0 +1,11 @@
+import numpy
+
+N = int(input())
+
+values = []
+
+for i in range(N):
+    A = list(map(float, input().split()))
+    values.append(A)
+arr = numpy.array(values)
+print(numpy.linalg.det(arr))
