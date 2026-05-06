@@ -1,0 +1,8 @@
+import numpy
+
+M = list(map(float, input().split()))
+
+x = int(input())
+
+arr = numpy.array(M)
+print(numpy.polyval(arr,x))
